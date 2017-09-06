@@ -9,10 +9,10 @@ Array.prototype.forEach.call(tag, function(el, i) {
     }, false);
 });
 
-var gra_sec = document.querySelectorAll('*[gra]');
+var gra_sec = document.querySelectorAll('*[tr-gradient]');
 var gra_say;
 for(gra_say = 0; gra_say < gra_sec.length; gra_say++){
-    var gra_ata = gra_sec[gra_say].getAttribute("gra");
+    var gra_ata = gra_sec[gra_say].getAttribute("tr-gradient");
     gra_sec[gra_say].style.background = "linear-gradient(to " +gra_ata+ ")";
 }
 
